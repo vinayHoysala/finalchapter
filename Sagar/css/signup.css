@@ -1,0 +1,126 @@
+
+/* signup */
+
+#signup {
+    /* background-image: linear-gradient(rgba(134, 184, 248, 0.4), rgba(151, 165, 91, 0.8)),url("https://wallpapercave.com/wp/NIUReXH.jpg"); */
+        background-image: url("../images/signup_bg.jpg");
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    width: 475px; /* 450 px*/
+    height: 275px; /* 250 px*/
+    margin-top: 150px;
+    border: 1px solid rgb(19, 18, 18);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    background: linear-gradient(to bottom right,teal,rgba(3, 40, 121, 0.705),rgba(209, 163, 10, 0.76),teal);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    box-shadow: inset 0 0 0 3000px linear-gradient(rgba(245, 248, 248, 0.7));
+    filter: blur(10px);
+    content: '';
+}
+.content {
+    position: relative;
+}
+.wrapper .login-logo-container{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0px 40px 10px;
+    border-right: 5px solid rgb(230, 199, 62);
+}
+.wrapper .login-logo-container img{
+    width: inherit;
+    height: inherit;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.wrapper h3 {
+    /* text-align: center; */
+    margin: 20px 0 0 185px;
+    color:rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper .login-form {
+    margin: 18px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .login-form .userIp{
+    margin: 5px 20px;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid transparent;
+}
+.wrapper .login-form #user{
+    padding-left: 20px;
+    border: 0;
+}
+.wrapper .login-form #uPass{
+    padding-left: 20px;
+    border: 0;
+}
+.wrapper .login-form label {
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+}
+ .wrapper .login-form #cBox {
+    height: 20px;
+    width: 20px;
+    border: 0;
+    transition: 0.5s ease;
+}
+.wrapper .login-form #sBtn {
+    font-size: 16px ;
+    font-weight: 400;
+    background-color: orange;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.wrapper .login-form #sBtn:hover {
+    background-color: rgb(192, 127, 5);
+    color: white;
+}
+.wrapper .login-form span a {
+    text-decoration: none;
+    background-color: rgb(6, 173, 75);
+    color: rgb(216, 216, 218);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: px;
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+}
+.wrapper .login-form a:hover {
+    background-color: gold;
+    color: rgb(5, 5, 143);
+}
+@media (max-width: 361) {
+    #signup {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 40px;
+    }
+}

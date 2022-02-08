@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styleGlobal.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <title>Login</title>
+    </head> 
+    <body>
+        <header class="bheader">
+            <a href="./index.htm"><img src="./images/Logo.png" alt="logo image"></a>
+            <nav class='navigation'>
+                <ul>
+                    <i id="menu-close" class="fas fa-times"></i>
+                    <li><a href="./index.htm">Home</a></li>
+                    <li><a href="./about.htm">About</a></li>
+                    <li><a href="./blogs.htm">Blog</a></li>
+                    <li><a href="./contactus.htm">Contact us</a></li>
+                    <li><a href="./loginSignup.htm">Login</a></li>
+                </ul>
+                <img id="menu-btn" src="images/Hamburger_icon.svg.png" alt="humburger-icon">
+            </nav>
+        </header>
+    <section id="signup">
+        <div class="wrapper">
+            <div class="content">
+                <h3 >Sign In</h3>
+                <div class="login-logo-container">
+                    <img src="https://i2.wp.com/felight.io/wp-content/uploads/2020/06/felight_logo_bold.png?w=640&ssl=1">
+                </div>
+                <form class="login-form" method="get">
+                    <!-- <span><i class="fas fa-user"> :: before </i></span> -->
+                    <input type="textbox" autofocus name="user" class="userIp" id="user" placeholder="Enter User id" onblur="checkUser()">
+                    <!-- <span><i class="fas fa-lock"> :: before </i></span> -->
+                    <input type="password" name="uPass" class="userIp" id="uPass" placeholder="Passward">
+                    <input type="submit" class="userIp" id="sBtn" value="Log in" onclick="validation()">
+                    <label><input type="checkbox" class="userIp" id="cBox">Remember me</label>
+                    <span class="userIp"><a href="#">New User</a></span>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $('#menu-btn').click(function() {
+        $('header .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function() {
+        $('header .navigation ul').removeClass('active')
+    });
+</script>
+<script src="./js/authantication.js"></script>
+</html>
